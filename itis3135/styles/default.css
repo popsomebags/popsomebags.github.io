@@ -1,0 +1,113 @@
+body
+{
+	font-family: Helvetica, sans-serif;
+	color: white ;
+	background-color: rgb(83,52,219);
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+header
+{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+    font-weight: bold;
+}
+
+footer
+{
+	margin-bottom: 35px;
+	text-align: center;
+    font-weight: bold;
+}
+
+main
+{
+	margin-left: 100px;
+	margin-right: 100px;
+    line-height: 1.43;
+}
+
+h1, h2
+{
+	font-family: Helvetica;
+	text-align: center;
+	line-height: 0px;
+}
+
+a
+{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #dad2d2;
+	text-decoration: none;
+}
+
+figure
+{
+	text-align: center;
+}
+
+figcaption
+{
+    font-style: italic;
+	font-weight: bold;
+}
+
+nav
+{
+	margin-top: 40px;
+	text-align: center;
+	font-size: 125%;
+}
+
+table 
+{
+	margin: auto;
+}
+
+table th {
+	background-color: #333;
+}
+
+table tr:nth-child(even) {
+	background-color: #777;
+	color: #fff; }
+
+table tr:nth-child(odd) {
+	background-color: #d3d3d3;
+	color: #fff; }
+
+th, td
+{
+	border: 1px solid black;
+}
+
+div {
+    text-align: center;
+}
+
+form 
+{
+	margin-top: 40px;
+	display: inline-block;
+	background-color: #777;
+}
+
+option
+{
+	color: black;
+}
+label, input
+{
+	font-size: 125%;
+	font-weight: 400;
+	color: aquamarine;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

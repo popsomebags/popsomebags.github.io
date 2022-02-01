@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style>
+    .center{
+        text-align: center;
+        list-style-position: inside;
+    }
+    #right {
+        text-align: right;
+    }
+</style>
+    <meta charset="UTF-8">
+    <link href="styles/default.css" rel="stylesheet" type="text/css">
+	<title>William Zhang, Activity 2, Tables</title>
+</head>
+
+<body>
+    <header>
+        <h1>William Zhang ITIS3135</h1>
+        <nav>
+            <a href="https://webpages.charlotte.edu/wzhang26/itis3135/">Home</a>
+            ||
+            <a href="https://webpages.charlotte.edu/wzhang26/itis3135/introduction.html">Introduction</a>
+            ||
+            <a href="">Contract</a>
+            ||
+            <a href="https://webpages.charlotte.edu/wzhang26/itis3135/tables.html">Activity 2 - Tables</a>
+            ||
+            <a href="https://webpages.charlotte.edu/wzhang26/itis3135/forms.html">Activity 3 - Forms</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Activity #2 - HTML Tables</h2>
+        <h3 class="center">My Tabular Data</h3>
+        <ol class="center">
+            <li>Andy Johnson andyjohnson55@gmail.com 5</li>
+            <li>Paul George paulg593@yahoo.com 8</li>
+            <li>Penny Kime pk33@hotmail.com 3</li>
+            <li>Jess Palmer jpalmer@uncc.edu 10</li>
+            <li>Mary Ryan mryan555@gmail.com 9</li>
+            <li>Troy Williams trwilliams@outlook.com 6</li>
+            <li>Jean Paul jpaul23@gmail.com 7</li>
+        </ol>
+        <h3 class="center">Employee Data in Simple Table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>Andy Johnson</td>
+                <td>andyjohnson55@gmail.com</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Paul George</td>
+                <td>paulg593@yahoo.com</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Penny Kime</td>
+                <td>pk33@hotmail.com</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Jess Palmer</td>
+                <td>jpalmer@uncc.edu</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Mary Ryan</td>
+                <td>mryan555@gmail.com</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Troy Williams</td>
+                <td>trwilliams@outlook.com</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Jean Paul</td>
+                <td>jpaul23@gmail.com</td>
+                <td>7</td>
+            </tr>
+        </table>
+
+        <h3 class="center">Employee Data in Complex Table</h3>
+        <figure>
+            <table>
+                <tr>
+                    <th id="col1">Category</th>
+                    <th id="col2">Name</th>
+                    <th id="col3">Email</th>
+                    <th id="col4">Years of Service</th>
+                    <th id="col5">Salary</th>
+                </tr>
+                <tr>
+                    <td headers="col1" rowspan="2">Owners</td>
+                    <td headers="col2">Andy Johnson</td>
+                    <td headers="col3">andyjohnson55@gmail.com</td>
+                    <td headers="col4">11</td>
+                    <td headers="col5">$1,000,000</td>
+                </tr>
+                <tr>
+                    <td headers="col2">Paul George</td>
+                    <td headers="col3">paulg593@yahoo.com</td>
+                    <td headers="col4">8</td>
+                    <td headers="col5">$1,000,000</td>
+                </tr>
+                <tr>
+                    <td headers="col1" rowspan="2">Managers</td>
+                    <td headers="col2">Penny Kime</td>
+                    <td headers="col3">pk33@hotmail.com</td>
+                    <td headers="col4">7</td>
+                    <td headers="col5">$300,000</td>
+                </tr>
+                <tr>
+                    <td headers="col2">Jess Palmer</td>
+                    <td headers="col3">jpalmer@uncc.edu</td>
+                    <td headers="col4">6</td>
+                    <td headers="col5">$300,000</td>
+                </tr>
+                <tr>
+                    <td headers="col1" rowspan="3">Employees</td>
+                    <td headers="col2">Mary Ryan</td>
+                    <td headers="col3">mryan555@gmail.com</td>
+                    <td headers="col4">5</td>
+                    <td headers="col5">$120,000</td>
+                </tr>
+                <tr>
+                    <td headers="col2">Troy Williams</td>
+                    <td headers="col3">trwilliams@outlook.com</td>
+                    <td headers="col4">3</td>
+                    <td headers="col5">$120,000</td>
+                </tr>
+                <tr>
+                    <td headers="col2">Jean Paul</td>
+                    <td headers="col3">jpaul23@gmail.com</td>
+                    <td headers="col4">4</td>
+                    <td headers="col5">$120,000</td>
+                </tr>
+                <tr>
+                    <td id="right" headers="col1" colspan="4">Total Salary Budget:</td>
+                    <td headers="col5">$2,960,000</td>
+                </tr>
+            </table>
+            <figcaption>Employee Information</figcaption>
+        </figure>
+    </main>
+
+    <footer id="placeholder">
+        <br/>
+        <nav>
+            <a href="https://webpages.charlotte.edu/wzhang26/">UNCC Home Page</a>
+            ||
+            <a href="https://github.com/popsomebags">Github</a>
+            ||
+            <a href="https://popsomebags.github.io/">Github.io</a>
+            ||
+            <a href="https://www.freecodecamp.org/altale">FreeCodeCamp</a>
+            ||
+            <a href="https://www.linkedin.com/in/will-zhang-91b454179/">Linkedin</a>
+        </nav>
+        <br/>
+        Made with ♥️ by <a href="https://webpages.charlotte.edu/wzhang26/whitezebra.co/">White Zebra Designs</a>
+        <p>
+			<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fwzhang26%2Fitis3135%2Ftables.html">
+				<img src="images/button_validation_html5.png" width="90" height="30" alt="HTML Validator">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fwzhang26%2Fitis3135%2Ftables.html">
+				<img src="images/button_validation_css.png" width="90" height="30" alt="CSS Validator">
+			</a>
+		</p>
+    </footer>
+
+</body>
+
+</html>
