@@ -2,15 +2,13 @@
 <html lang="en">
 
 <head>
-    <style>
-        select:invalid { color: gray; }
-    </style>
     <meta charset="UTF-8">
     <link href="styles/default.css" rel="stylesheet" type="text/css">
-	<title>William Zhang, ITIS 3135, Forms</title>
+    <script src="scripts/defaultscripts.js"></script>
+	<title>William Zhang, ITIS 3135, First Script</title>
 </head>
 
-<body>
+<body onload="questions()">
     <header>
         <h1>William Zhang, ITIS3135, White Zebra</h1>
         <nav>
@@ -33,33 +31,26 @@
     </header>
 
     <main>
-        <h2>Form</h2>
-
-        <div>
-            <form action="#">
-                <label for="name">Full Name:</label><br>
-                <input required type="text" id="name" name="name" placeholder="William Zhang"><br>
-                <label for="phonenumber">Phone Number:</label><br>
-                <input required type="text" id="phonenumber" name="phonenumber"><br>
-                <label for="email">Email Address:</label><br>
-                <input required type="text" id="email" name="email"><br>
-                <label for="chocolate"><input id="chocolate" type="checkbox" name="icecream">Chocolate</label>
-                <label for="vanilla"><input id="vanilla" type="checkbox" name="icecream">Vanilla</label><br>
-                <label for="spotify"><input id="spotify" type="radio" name="music">Spotify</label>
-                <label for="applemusic"><input id="applemusic" type="radio" name="music">Apple Music</label><br>
-                <label for="drink">Choose your favorite drink:</label><br>
-                <select name="drink" id="drink" required>
-                    <option value="" disabled selected hidden>Select one...</option>
-                    <option value="water">Water</option>
-                    <option value="coke">Coke</option>
-                    <option value="pepsi">Pepsi</option>
-                    <option value="fanta">Fanta</option>
-                </select><br>
-                <button type="reset" value="Reset">Reset</button>
-                <button type="submit" value="Submit">Submit</button>
-            </form>
-        </div>
-
+        <h2>Activity #5 - First JS</h2>
+        <h3 id="date"></h3>
+        <h3 id="welcome"></h3>
+        <br>
+        <br>
+        <h4>Button Functions</h4>
+        <button onclick="multiply()">Multiply two integers</button>
+        <p id="multiply"></p>
+        <br>
+        <button onclick="subtract()">Subtract two integers</button>
+        <p id="subtract"></p>
+        <br>
+        <button onclick="add()">Add two integers</button>
+        <p id="add"></p>
+        <br>
+        <button onclick="divide()">Divide two integers</button>
+        <p id="divide"></p>
+        <br>
+        <button onclick="feetToInches()">Calcuate inches from feet</button>
+        <p id="inches"></p>
     </main>
 
     <footer id="placeholder">
@@ -78,11 +69,11 @@
         <br/>
         Made with ♥️ by <a href="https://webpages.charlotte.edu/wzhang26/whitezebra.co/">White Zebra Designs</a>
         <p>
-			<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fwzhang26%2Fitis3135%2Fforms.html">
+			<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fwzhang26%2Fitis3135%2Fintroduction.html">
 				<img src="images/button_validation_html5.png" width="90" height="30" alt="HTML Validator">
 			</a>
 
-			<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fwzhang26%2Fitis3135%2Fforms.html">
+			<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fwzhang26%2Fitis3135%2Fintroduction.html">
 				<img src="images/button_validation_css.png" width="90" height="30" alt="CSS Validator">
 			</a>
 		</p>

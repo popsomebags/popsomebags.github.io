@@ -2,12 +2,10 @@
 <html lang="en">
 
 <head>
-    <style>
-        select:invalid { color: gray; }
-    </style>
     <meta charset="UTF-8">
     <link href="styles/default.css" rel="stylesheet" type="text/css">
-	<title>William Zhang, ITIS 3135, Forms</title>
+    <script src="scripts/slides.js"></script>
+	<title>William Zhang, ITIS 3135, Home Page</title>
 </head>
 
 <body>
@@ -33,33 +31,37 @@
     </header>
 
     <main>
-        <h2>Form</h2>
+        <h2 style="text-align:center">Slideshow</h2>
 
-        <div>
-            <form action="#">
-                <label for="name">Full Name:</label><br>
-                <input required type="text" id="name" name="name" placeholder="William Zhang"><br>
-                <label for="phonenumber">Phone Number:</label><br>
-                <input required type="text" id="phonenumber" name="phonenumber"><br>
-                <label for="email">Email Address:</label><br>
-                <input required type="text" id="email" name="email"><br>
-                <label for="chocolate"><input id="chocolate" type="checkbox" name="icecream">Chocolate</label>
-                <label for="vanilla"><input id="vanilla" type="checkbox" name="icecream">Vanilla</label><br>
-                <label for="spotify"><input id="spotify" type="radio" name="music">Spotify</label>
-                <label for="applemusic"><input id="applemusic" type="radio" name="music">Apple Music</label><br>
-                <label for="drink">Choose your favorite drink:</label><br>
-                <select name="drink" id="drink" required>
-                    <option value="" disabled selected hidden>Select one...</option>
-                    <option value="water">Water</option>
-                    <option value="coke">Coke</option>
-                    <option value="pepsi">Pepsi</option>
-                    <option value="fanta">Fanta</option>
-                </select><br>
-                <button type="reset" value="Reset">Reset</button>
-                <button type="submit" value="Submit">Submit</button>
-            </form>
+        <div class="contain">
+
+          <div class="mySlides">
+            <img src="images/image1.jpg" style="width:50%">
+          </div>
+        
+          <div class="mySlides">
+            <img src="images/image2.jpg" style="width:50%">
+          </div>
+        
+          <div class="mySlides">
+            <img src="images/image3.jpg" style="width:50%">
+          </div>
+            
+          <div class="mySlides">
+            <img src="images/image4.jpg" style="width:50%">
+          </div>
+        
+          <div class="mySlides">
+            <img src="images/image5.jpg" style="width:50%">
+          </div>
+            
+          <div class="mySlides">
+            <img src="images/image6.jpg" style="width:50%">
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
-
     </main>
 
     <footer id="placeholder">
@@ -78,11 +80,11 @@
         <br/>
         Made with ♥️ by <a href="https://webpages.charlotte.edu/wzhang26/whitezebra.co/">White Zebra Designs</a>
         <p>
-			<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fwzhang26%2Fitis3135%2Fforms.html">
+			<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fwzhang26%2Fitis3135%2Fintroduction.html">
 				<img src="images/button_validation_html5.png" width="90" height="30" alt="HTML Validator">
 			</a>
 
-			<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fwzhang26%2Fitis3135%2Fforms.html">
+			<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fwzhang26%2Fitis3135%2Fintroduction.html">
 				<img src="images/button_validation_css.png" width="90" height="30" alt="CSS Validator">
 			</a>
 		</p>

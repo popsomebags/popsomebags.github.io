@@ -3,10 +3,13 @@
 
 <head>
     <style>
-        select:invalid { color: gray; }
+        .keys {
+            display: grid;
+        }
     </style>
     <meta charset="UTF-8">
     <link href="styles/default.css" rel="stylesheet" type="text/css">
+    <script src="scripts/calculator.js"></script>
 	<title>William Zhang, ITIS 3135, Forms</title>
 </head>
 
@@ -33,33 +36,29 @@
     </header>
 
     <main>
-        <h2>Form</h2>
+        <h2>Calculator</h2>
 
-        <div>
-            <form action="#">
-                <label for="name">Full Name:</label><br>
-                <input required type="text" id="name" name="name" placeholder="William Zhang"><br>
-                <label for="phonenumber">Phone Number:</label><br>
-                <input required type="text" id="phonenumber" name="phonenumber"><br>
-                <label for="email">Email Address:</label><br>
-                <input required type="text" id="email" name="email"><br>
-                <label for="chocolate"><input id="chocolate" type="checkbox" name="icecream">Chocolate</label>
-                <label for="vanilla"><input id="vanilla" type="checkbox" name="icecream">Vanilla</label><br>
-                <label for="spotify"><input id="spotify" type="radio" name="music">Spotify</label>
-                <label for="applemusic"><input id="applemusic" type="radio" name="music">Apple Music</label><br>
-                <label for="drink">Choose your favorite drink:</label><br>
-                <select name="drink" id="drink" required>
-                    <option value="" disabled selected hidden>Select one...</option>
-                    <option value="water">Water</option>
-                    <option value="coke">Coke</option>
-                    <option value="pepsi">Pepsi</option>
-                    <option value="fanta">Fanta</option>
-                </select><br>
-                <button type="reset" value="Reset">Reset</button>
-                <button type="submit" value="Submit">Submit</button>
-            </form>
+        <div class="calculator">
+            <div class="keys">
+                <button class="operation">+</button>
+                <button class="operation">-</button>
+                <button class="operation">X</button>
+                <button class="operation">÷</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>0</button>
+                <button>.</button>
+                <button>AC</button>
+                <button>=</button>
+            </div>
         </div>
-
     </main>
 
     <footer id="placeholder">

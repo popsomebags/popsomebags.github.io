@@ -1,113 +1,215 @@
-body
-{
-	font-family: Helvetica, sans-serif;
-	color: white ;
-	background-color: rgb(83,52,219);
-	margin-left: 70px;
-	margin-right: 70px;
+body {
+    font-family: Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(83, 52, 219);
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
-header
-{
-	margin-top: 50px;
-	margin-bottom: 50px;
-	text-align: center;
+header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
     font-weight: bold;
 }
 
-footer
-{
-	margin-bottom: 35px;
-	text-align: center;
+footer {
+    margin-bottom: 35px;
+    text-align: center;
     font-weight: bold;
 }
 
-main
-{
-	margin-left: 100px;
-	margin-right: 100px;
+main {
+    margin-left: 100px;
+    margin-right: 100px;
     line-height: 1.43;
 }
 
-h1, h2
-{
-	font-family: Helvetica;
-	text-align: center;
-	line-height: 0px;
+h1,
+h2 {
+    font-family: Helvetica;
+    text-align: center;
+    line-height: 0px;
 }
 
-a
-{
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 a:hover {
-	color: #dad2d2;
-	text-decoration: none;
+    color: #dad2d2;
+    text-decoration: none;
 }
 
-figure
-{
-	text-align: center;
+figure {
+    text-align: center;
 }
 
-figcaption
-{
+figcaption {
     font-style: italic;
-	font-weight: bold;
+    font-weight: bold;
 }
 
-nav
-{
-	margin-top: 40px;
-	text-align: center;
-	font-size: 125%;
+nav {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 125%;
 }
 
-table 
-{
-	margin: auto;
+table {
+    margin: auto;
 }
 
 table th {
-	background-color: #333;
+    background-color: #333;
 }
 
 table tr:nth-child(even) {
-	background-color: #777;
-	color: #fff; }
+    background-color: #777;
+    color: #fff;
+}
 
 table tr:nth-child(odd) {
-	background-color: #d3d3d3;
-	color: #fff; }
+    background-color: #d3d3d3;
+    color: #fff;
+}
 
-th, td
-{
-	border: 1px solid black;
+th,
+td {
+    border: 1px solid black;
 }
 
 div {
     text-align: center;
 }
 
-form 
-{
-	margin-top: 40px;
-	display: inline-block;
-	background-color: #777;
+form {
+    margin-top: 40px;
+    display: inline-block;
+    background-color: #777;
 }
 
-option
-{
-	color: black;
+label,
+input {
+    font-size: 125%;
+    font-weight: 400;
+    color: aquamarine;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-label, input
-{
-	font-size: 125%;
-	font-weight: 400;
-	color: aquamarine;
-	margin-top: 10px;
-	margin-bottom: 10px;
+
+section {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.container {
+    max-width: 20em;
+}
+
+.container>p {
+    text-align: center;
+}
+
+.calculator {
+    border-radius: 12px;
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    max-width: 15em;
+    overflow: hidden;
+}
+
+.display {
+    background-color: #222222;
+    color: #fff;
+    font-size: 1.714285714em;
+    padding: 0.5em 0.75em;
+    text-align: right;
+}
+
+.keys {
+    background-color: #999;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.keys>* {
+    background-color: #fff;
+    padding: 0.5em 1.25em;
+    position: relative;
+    text-align: center;
+}
+
+.keys>*:active::before,
+.keys>.is-depressed::before {
+    background-color: rgba(0, 0, 0, 0.2);
+    bottom: 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+    content: "";
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.key {
+    background-color: #eee;
+}
+
+.equals {
+    background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+    grid-column: -2;
+    grid-row: 2 / span 4;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.mySlides {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.contain {
+    position: relative;
+}
+
+img {
+    vertical-align: middle
 }
