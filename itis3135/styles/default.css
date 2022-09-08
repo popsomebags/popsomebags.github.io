@@ -14,7 +14,7 @@ header, footer
 	text-align: center;
 }
 
-main
+ul, li
 {
 	margin-left: 100px;
 	margin-right: 100px;
