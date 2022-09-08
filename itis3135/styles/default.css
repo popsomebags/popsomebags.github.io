@@ -14,6 +14,12 @@ header, footer
 	text-align: center;
 }
 
+main
+{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
 h1, h2
 {
     text-align: center;
