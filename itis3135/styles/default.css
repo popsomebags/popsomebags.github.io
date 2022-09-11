@@ -56,3 +56,8 @@ nav
 table, th, td {
 	border: 1px solid;
   }
+
+.center
+{
+	text-align: center;
+}
