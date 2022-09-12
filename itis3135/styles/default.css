@@ -66,4 +66,11 @@ form
 {
 	text-align: center;
 	display: inline-block;
+	background-color: aliceblue;
+	line-height: 10px;
+}
+
+button
+{
+	background-color: gray;
 }
