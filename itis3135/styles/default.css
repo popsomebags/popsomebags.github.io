@@ -3,8 +3,8 @@ body
     font-family: Helvetica, sans-serif;
     background-color: #F7EBE8;
     color: #444140;
-    margin-left: 200px;
-	margin-right: 200px;
+    margin-left: 120px;
+	margin-right: 120px;
 }
 
 header, footer
@@ -16,8 +16,8 @@ header, footer
 
 main 
 {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 h1, h2, h3
