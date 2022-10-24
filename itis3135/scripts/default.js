@@ -1,3 +1,4 @@
+// Function that uses constant variables to display the date and time.
 function displayDate(){
     let today = new Date();
     const weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
@@ -7,6 +8,8 @@ function displayDate(){
         ", " + today.getDate() + " " + month[today.getMonth()] + ", " + today.getFullYear();
 }
 
-function myFunction() {
-    alert("Page is loaded");
+// Function that greets and welcomes the user.
+function welcomeUser(){
+    document.getElementById("response").innerHTML = "Wonderful Zebra Ltd. welcomes you, " + document.getElementById("name").value + 
+        "! We're glad you are doing " + document.getElementById("feeling").value + "!";
 }
