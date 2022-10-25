@@ -8,36 +8,20 @@
     <title>ITIS 3135 | William Zhang | Introduction</title>
 </head>
 
-<body onload="displayDate()">
-    <script src="scripts/default.js"></script>
-    <header>
-        <h1>ITIS 3135 | William Zhang</h1>
-		<nav>
-			<a href="index.html">Home</a> 
-			|
-			<a href="introduction.html">Introduction</a> 
-			|
-			<a href="contract.html">Contract</a>
-            |
-            <a href="tables.html">Tables</a> 
-			|
-            <a href="forms.html">Forms</a> 
-            |
-            <a href="website_evaluations.html">Website Evaluations</a> 
-		</nav>
-    </header>
+<body>
+    <div data-include="components/header.html"></div>
 
     <main>
         <h1>First Scripts</h1>
-        <h3 id="date"></h3>
+        <h2 id="date"></h2>
         <h3 id="response"></h3><br>
 
         <form class="defaultcolor left">
             <label for="name">What is your name?</label>
-            <input type="text" id="name"><br>
+            <input type="text" id="name" required><br>
             <label for="feeling">How are you feeling?</label>
-            <input type="text" id="feeling"><br>
-            <input class="button" type="submit" onclick="welcomeUser(); return false;"><br>
+            <input type="text" id="feeling" required><br>
+            <input class="button" type="submit" onclick="welcomeUser(); return false;" required><br>
         </form>
 
         <h3 class="left">Generate a random color: </h2>
@@ -61,34 +45,9 @@
         <h3 class="left red" id="food"></h3>
 
     </main>
-
-    <footer>
-        <nav>
-            <a href="http://webpages.uncc.edu/wzhang26/" target="_blank">Charlotte.edu</a>
-            |
-            <a href="https://github.com/popsomebags" target="_blank">Github</a> 
-            |
-            <a href="https://popsomebags.github.io/" target="_blank">Github.io</a> 
-            |
-            <a href="https://popsomebags.github.io/itis3135/" target="_blank">ITIS 3135 Github Pages</a> 
-            |
-            <a href="https://www.codecademy.com/profiles/wzhang26" target="_blank">Codecademy</a> 
-            |
-            <a href="https://www.freecodecamp.org/wzhang26/" target="_blank">freeCodeCamp</a> 
-        </nav>
-        <br>
-        Made with love by <a href="https://webpages.charlotte.edu/wzhang26/wonderfulzebra.co/">Wonderful Zebra</a>
-        <br>
-        <br>
-            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fwzhang26%2Fitis3135%2Fintroduction.html">
-                <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
-            </a>
-
-            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fwzhang26%2Fitis3135%2Fintroduction.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
-                <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
-            </a>
-        </p>
-    </footer>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/default.js"></script>
 </body>
 
 </html>

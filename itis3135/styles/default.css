@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=DM%20Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open%20Sans&display=swap');
 
 body
 {
@@ -18,8 +20,20 @@ header, footer
 
 main 
 {
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 100px;
+    margin-right: 100px;
+	padding: 80px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+	background-color: #d4c9c7;
+	border: 2px solid #ebdcda;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1
+{
+	font-family: "Merriweather", sans-serif;
 }
 
 h1, h2, h3
@@ -30,6 +44,11 @@ h1, h2, h3
 h2, h3, h4
 {
 	font-family: "DM Sans", sans-serif;
+}
+
+p
+{
+	font-family: "Open Sans", sans-serif;
 }
 
 a
@@ -53,11 +72,6 @@ figure
 figcaption
 {
 	font-style: italic;
-}
-
-nav
-{
-	text-align: center;
 }
 
 table, th, td {
@@ -89,21 +103,19 @@ form
 
 .defaultcolor
 {
-	background-color: #F7EBE8;
+	background-color: #d4c9c7;
 }
 
-button
+button, input[type=submit]
 {
 	padding: 5px 10px;
 	font-size: 15px;
 	cursor: pointer;
-	
-	border-radius: 7px;
 	background-color: white;
 	color: #444140;
 }
 
-button:hover
+button:hover, input[type=submit]:hover
 {
 	border-radius: 0px;
     
