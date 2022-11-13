@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=DM%20Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open%20Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+
+body
+{
+    font-family: "Inter";
+    background-color: #5E6572;
+    color: #EEF1EF;
+    margin-left: 80px;
+	margin-right: 80px;
+}
+
+header, footer
+{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+main 
+{
+    margin-left: 100px;
+    margin-right: 100px;
+	padding: 80px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+	background-color: #A9B4C2;
+	border: 2px solid #EAB464;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1, h2, h3
+{
+    text-align: center;
+}
+
+h1, h2, h3, h4
+{
+	font-family: "DM Sans", sans-serif;
+}
+
+p
+{
+	font-family: "Open Sans", sans-serif;
+}
+
+a
+{
+	text-decoration: none;
+	color: #7D98A1;
+	font-weight: bold;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: #EAB464;
+}
+
+figure
+{
+	text-align: center;
+}
+
+figcaption
+{
+	font-style: italic;
+}
