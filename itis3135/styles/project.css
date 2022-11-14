@@ -20,8 +20,8 @@ header, footer
 
 main 
 {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
 	padding: 80px;
     padding-top: 20px;
     padding-bottom: 40px;
@@ -30,6 +30,19 @@ main
 	border-radius: 8px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+h1{
+    font-size: 60px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 20px;
+}
+
 
 h1, h2, h3
 {
@@ -44,6 +57,8 @@ h1, h2, h3, h4
 p
 {
 	font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    font-size: 17px;
 }
 
 a
@@ -67,4 +82,46 @@ figure
 figcaption
 {
 	font-style: italic;
+}
+
+header nav ul{
+    list-style-type: none;
+    box-sizing: border-box;
+    background-color: #7D98A1;
+    border: 2px solid #141414;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0;
+    overflow: hidden;
+    float: center;
+}
+footer nav ul{
+    list-style-type: none;
+    border: 2px solid #141414;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7D98A1;
+}
+
+nav li{
+    float: left;
+    border-right: 2px solid #141414;
+}
+nav li a{
+    display: block;
+    color: #EBEBEB;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav li a:hover{
+    background-color: #92b1bb;
+}
+
+.center
+{
+    text-align: center;
 }

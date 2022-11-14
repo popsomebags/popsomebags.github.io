@@ -1,5 +1,5 @@
 // Function that uses constant variables to display the date and time.
-function displayDate(){
+function getTodaysDate(){
     let today = new Date();
     const weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
     const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -13,6 +13,11 @@ function welcomeUser(){
     document.getElementById("response").innerHTML = "Wonderful Zebra Ltd. welcomes you, " + document.getElementById("name").value + 
         "! We're glad you are doing " + document.getElementById("feeling").value + "!";
 }   
+
+// PromptUser function
+function promptUser(){
+    let name = prompt("Please enter your name");
+}
 
 function generateColor(){
     var colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"];
