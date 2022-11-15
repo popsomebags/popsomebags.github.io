@@ -5,7 +5,7 @@
 body
 {
     font-family: Helvetica, sans-serif;
-    background-color: #F7EBE8;
+    background-color: #d4a373;
     color: #444140;
     margin-left: 120px;
 	margin-right: 120px;
@@ -20,15 +20,13 @@ header, footer
 
 main 
 {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
 	padding: 80px;
     padding-top: 20px;
     padding-bottom: 40px;
-	background-color: #d4c9c7;
-	border: 2px solid #ebdcda;
-	border-radius: 8px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #faedcd;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 h1
@@ -49,19 +47,47 @@ h2, h3, h4
 p
 {
 	font-family: "Open Sans", sans-serif;
+	line-height: 1.6;
 }
 
 a
 {
 	text-decoration: none;
-	color: #B20D30;
+	color: #283618;
 	font-weight: bold;
 }
 
 a:hover
 {
-	text-decoration: underline;
-	color: #DB5461;
+	color: #435a28;
+}
+
+header nav ul{
+    list-style-type: none;
+    box-sizing: border-box;
+    background-color: #283618;
+    border: 2px solid #faedcd;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li{
+    float: left;
+    border: 1px solid #faedcd;
+}
+
+nav li a{
+    display: block;
+    color: #EBEBEB;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    background-color: #faedcd;
 }
 
 figure
@@ -110,7 +136,7 @@ form
 
 .defaultcolor
 {
-	background-color: #d4c9c7;
+	background-color: #faedcd;
 }
 
 button, input[type=submit], input[type=reset]
@@ -204,4 +230,14 @@ button:hover, input[type=submit]:hover, input[type=reset]:hover
 	background-image: linear-gradient(to bottom, #fe886a, #ff7033);
 	grid-column: -2;
 	grid-row: 2 / span 4;
+  }
+
+  .margincenter {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .defaultlineheight
+  {
+	line-height: 1.6;
   }

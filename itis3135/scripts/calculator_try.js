@@ -55,6 +55,7 @@ window.onload = function () {
       
           if (action === 'clear') {
             console.log('clear key!')
+            alert("Calculator Cleared!");
           }
       
           if (action === 'calculate') {

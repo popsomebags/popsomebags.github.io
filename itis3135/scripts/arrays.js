@@ -3,8 +3,8 @@ var salary = [];
 
 function addSalary()
 {
-    var employeeName = document.getElementById('employeeName').value;
-    var employeeSalary = parseInt(document.getElementById('employeeSalary').value);
+    var employeeName = document.getElementById('employee').value;
+    var employeeSalary = parseInt(document.getElementById('salary').value);
 
     if ((employeeSalary == "") || (isNaN(employeeSalary))) {
         alert("Please enter a valid salary!");
@@ -32,7 +32,7 @@ function displayResults() {
             high = salary[j];
         }
     }
-    document.getElementById("results").innerHTML = "<h2>Results</h2>" + "<p>The Average Salary is: $" + average + "</p>" + "<p>, and the highest salary is: $" + high + "</p>";
+    document.getElementById("results").innerHTML = "<h2>Results</h2>" + "<p>The average salary is $" + average + ", and the highest salary is $" + high + "." + "</p>";
 }
 
 function displaySalary() {
