@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles/default.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS 3135 | William Zhang | Hobby Page</title>
+    <script>
+
+        function display(page) 
+        {
+            let i;
+            let sections;
+            let replace;
+
+            sections = document.getElementsByClassName("clothing");
+            for(i = 0; i < sections.length; i++)
+            {
+                sections[i].style.display="none";
+            }
+            document.getElementById(page).style.display="block";
+        }
+
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=DM%20Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Open%20Sans&display=swap');
+
+        body
+        {
+            font-family: Helvetica, sans-serif;
+            background-color: #d4a373;
+            color: #444140;
+            margin-left: 120px;
+            margin-right: 120px;
+        }
+
+        header, footer
+        {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        main 
+        {
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 80px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            background-color: #faedcd;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        h1
+        {
+            font-family: "Merriweather", sans-serif;
+        }
+
+        h1, h2, h3
+        {
+            text-align: center;
+        }
+
+        h2, h3, h4
+        {
+            font-family: "DM Sans", sans-serif;
+        }
+
+        p
+        {
+            font-family: "Open Sans", sans-serif;
+            line-height: 1.6;
+        }
+
+        a
+        {
+            text-decoration: none;
+            color: #283618;
+            font-weight: bold;
+        }
+
+        button
+        {
+            background-color: #283618; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+        }
+
+        button:hover
+        {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #283618;
+        }
+
+        a:hover
+        {
+            color: #435a28;
+        }
+
+        header nav ul{
+            list-style-type: none;
+            box-sizing: border-box;
+            background-color: #283618;
+            border: 2px solid #faedcd;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav li{
+            float: left;
+            border: 1px solid #faedcd;
+        }
+
+        nav li a{
+            display: block;
+            color: #EBEBEB;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li a:hover{
+            background-color: #faedcd;
+        }
+
+        figure
+        {
+            text-align: center;
+        }
+
+        figcaption
+        {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>ITIS 3135 | William Zhang | Hobby Page</h1>
+        <nav>
+            <ul>
+                <li><button onclick="display('home')">Home</button></li>
+                <li><button onclick="display('about')">About Me</button></li>
+                <li><button onclick="display('daily')">Daily Wear</button></li>
+                <li><button onclick="display('accessories')">Accessories</button></li>
+                <li><button onclick="display('shoes')">Shoes</button></li>
+                <li><button onclick="display('favorites')">Favorite Pieces</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="clothing" id="home">
+            <h2>Home</h2>
+            <h3>Welcome to my Hobby Page! Here is where I can show you one of my favorite hobbies.</h3>
+            <h3>Clothing and fashion have been a recent hobby of mine. Style can help you express yourself in a variety of ways.</h3>
+            <figure>
+                <a href="images/blueovershirt.jpg">
+                    <img src="images/blueovershirt.jpg" alt="A blue overshirt I bought.">
+                </a>
+                <figcaption>A blue overshirt I recently bought.</figcaption>
+            </figure>
+        </section>
+
+        <section class="clothing" id="about" style="display: none">
+            <h2>About Me</h2>
+            <h3>Hi, my name is William Zhang. I am currently a Senior at UNCC.</h3>
+            <h3>I'm currently majoring in Computer Science, with a concentration in Cybersecurity.</h3>
+            <figure>
+                <a href="images/closet.jpg">
+                    <img src="images/closet.jpg" alt="Picture of my closet.">
+                </a>
+                <figcaption>My current wardrobe. I recently emptied it out.</figcaption>
+            </figure>
+        </section>
+
+        <section class="clothing" id="daily" style="display: none">
+            <h2>Daily Wear</h2>
+            <h3>I am on campus most of the week, so I cycle through clothes in my closet quite frequently.</h3>
+            <h3>Usually I try to dress very casually, and I combine a lot of neutral colors and earth tones in my clothes.</h3>
+            <figure>
+                <a href="images/daily.jpg">
+                    <img src="images/daily.jpg" alt="An average outfit.">
+                </a>
+                <figcaption>What I'm wearing currently. It is a pretty basic earth tone outfit.</figcaption>
+            </figure>
+        </section>
+
+        <section class="clothing" id="accessories" style="display: none">
+            <h2>Accessories</h2>
+            <h3>Accessories are a great way to enhance your look by adding a little bit of detail to certain aspects.</h3>
+            <h3>Recently I've been wearing these rings, but a good accessory to start with is a watch.</h3>
+            <figure>
+                <a href="images/rings.jpg">
+                    <img src="images/rings.jpg" alt="My rings.">
+                </a>
+                <figcaption>My rings, they are pretty cheap and look alright. I'll be buying more expensive ones in the future.</figcaption>
+            </figure>
+        </section>
+
+        <section class="clothing" id="shoes" style="display: none">
+            <h2>Shoes</h2>
+            <h3>Shoes are a great piece to bring your outfit together.</h3>
+            <h3>I am a big fan of white sneakers, but if I want to dress a little more elegantly I choose chelsea boots instead.</h3>
+            <figure>
+                <a href="images/airforces.jpg">
+                    <img src="images/airforces.jpg" alt="My air force 1's.">
+                </a>
+                <figcaption>White air forces, I wear these the most.</figcaption>
+            </figure>
+            <br>
+            <h3>Other shoes I also wear</h3>
+            <div style="text-align: center;">
+                <a href="images/pandadunks.jpg">
+                    <img src="images/pandadunks.jpg" alt="Panda Dunks">
+                </a>
+    
+                <a href="images/chelseaboots.jpg">
+                    <img src="images/chelseaboots.jpg" alt="Chelsea Boots">
+                </a>
+            </div>
+        </section>
+
+        <section class="clothing" id="favorites" style="display: none">
+            <h2>Favorite Pieces</h2>
+            <h3>Currently, my favorite pieces are basic items that I can always wear.</h3>
+            <h3>Examples are a T-Shirt, Sweater, etc.</h3>
+            <figure>
+                <a href="images/blueovershirt.jpg">
+                    <img src="images/blueovershirt.jpg" alt="Blue Overshirt.">
+                </a>
+                <figcaption>My current favorite item in my wardrobe.</figcaption>
+            </figure>
+        </section>
+        
+        
+
+    </main>
+    
+    <footer>
+        Made with love by <a href="https://webpages.charlotte.edu/wzhang26/wonderfulzebra.co/">Wonderful Zebra</a>
+        <br>
+        <br>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fwzhang26%2Fitis3135%2Fintroduction.html">
+                <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+            </a>
+
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fwzhang26%2Fitis3135%2Fintroduction.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+                <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
