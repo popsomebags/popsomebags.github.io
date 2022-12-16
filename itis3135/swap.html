@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITIS 3135 | William Zhang | Home Page</title>
+    <script src="scripts/jquery-3.6.1.js"></script>
 </head>
 
 <body>
@@ -13,29 +14,29 @@
 
     <main>
         
-        <h1>Some Title Goes Here</h1>
-	    <ul id="image_list">
-	        <li><a href="Activity10_images/h1.jpg" title="James Allison: 1-1">
-	        	<img src="Activity10_thumbnails/t1.jpg" alt=""></a></li>
-	        <li><a href="Activity10_images/h2.jpg" title="James Allison: 1-2">
-	        	<img src="Activity10_thumbnails/t2.jpg" alt=""></a></li>
-	        <li><a href="Activity10_images/h3.jpg" title="James Allison: 1-3">
-	        	<img src="Activity10_thumbnails/t3.jpg" alt=""></a></li>
-	        <li><a href="Activity10_images/h4.jpg" title="James Allison: 1-4">
-	        	<img src="Activity10_thumbnails/t4.jpg" alt=""></a></li>
-	        <li><a href="Activity10_images/h5.jpg" title="James Allison: 1-5">
-	        	<img src="Activity10_thumbnails/t5.jpg" alt=""></a></li>
-	        <li><a href="Activity10_images/h6.jpg" title="James Allison: 1-6">
-	        	<img src="Activity10_thumbnails/t6.jpg" alt=""></a></li>
+        <h1>Image Swap</h1>
+	    <ul class="center" id="thumbnail">
+	        <li>
+	        	<img src="../itis3135/hobby/images/rings.jpg" alt="My rings" id="rings" title="rings"></li>
+            <li>
+	        	<img src="../itis3135/hobby/images/airforces.jpg" alt="Air Force 1's" id="af1" title="af1"></li>
+            <li>
+	        	<img src="../itis3135/hobby/images/blueovershirt.jpg" alt="Blue Overshirt" id="overshirt" title="overshirt"></li>
+            <li>
+	        	<img src="../itis3135/hobby/images/daily.jpg" alt="Daily Fit" id="fit" title="fit"></li>
+            <li>
+	        	<img src="../itis3135/hobby/images/pandadunks.jpg" alt="Panda Dunks" id="dunks" title="dunks"></li>
+            <li>
+	        	<img src="../itis3135/hobby/images/closet.jpg" alt="My Closet" id="closet" title="closet"></li>
 	    </ul>
-	    <h2 id="caption">James Allison: 1-1</h2>               
-	    <p><img src="Activity10_images/h1.jpg" alt="" id="image"></p>
-
+	    <br>
+        <img src="../itis3135/hobby/images/rings.jpg" id="current" alt="rings" title="rings" class="margincenter">
+        <h2 id="caption">My rings</h2>
+        <br><br>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/include.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="imageswap.js"></script>
+    <script src="scripts/imageswap.js"></script>
 </body>
 
 </html>

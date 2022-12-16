@@ -1,15 +1,59 @@
-$(document).ready(function() {
+$('#rings').on({
+    'click': function(){
+        $("#current, #caption").fadeOut("slow", function() {
+            $('#current').attr('src', "../itis3135/hobby/images/rings.jpg");
+            $("#caption").html("My rings");
+            $("#current, #caption").fadeIn("slow");
+        });             
+    }
+});
 
+$('#af1').on({
+    'click': function(){
+        $("#current, #caption").fadeOut("slow", function() {
+            $('#current').attr('src', "../itis3135/hobby/images/airforces.jpg");
+            $("#caption").html("Air Force 1's");
+            $("#current, #caption").fadeIn("slow");
+        });             
+    }
+});
 
-    // preload the image for each link
+$('#dunks').on({
+    'click': function(){
+        $("#current, #caption").fadeOut("slow", function() {
+            $('#current').attr('src', "../itis3135/hobby/images/pandadunks.jpg");
+            $("#caption").html("Panda Dunks");
+            $("#current, #caption").fadeIn("slow");
+        });             
+    }
+});
 
-    // set up the event handlers for each link
+$('#overshirt').on({
+    'click': function(){
+        $("#current, #caption").fadeOut("slow", function() {
+            $('#current').attr('src', "../itis3135/hobby/images/blueovershirt.jpg");
+            $("#caption").html("A blue overshirt");
+            $("#current, #caption").fadeIn("slow");
+        });             
+    }
+});
 
-            // get the image URL and caption for each image and animate the caption
+$('#fit').on({
+    'click': function(){
+        $("#current, #caption").fadeOut("slow", function() {
+            $('#current').attr('src', "../itis3135/hobby/images/daily.jpg");
+            $("#caption").html("My Daily Outfit");
+            $("#current, #caption").fadeIn("slow");
+        });             
+    }
+});
 
-        // cancel the default action of each link
-
-
-// move the focus to the first link
-
-}); // end ready
+$('#closet').on({
+    'click': function(){
+        $("#current, #caption").fadeOut("slow", function() {
+            $('#current').attr('src', "../itis3135/hobby/images/closet.jpg");
+            $("#caption").html("My Closet");
+            $("#current, #caption").fadeIn("slow");
+        });             
+    }
+});
